@@ -1,0 +1,85 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+L1         PCB-hdjvyscrw6xn5uzu8eff-1    603.346mil   4091.535mil    603.346mil   4091.535mil    691.929mil   4091.535mil  T        180.00 Bourns SRP5030T-5R6M
+R19        R0603             2156.684mil   4316.065mil   2156.684mil   4316.065mil   2190.149mil   4316.065mil  T        180.00 5.1K           
+D3         PCB-9uwk2xd6chnjs8ehct7l-1   2159.449mil   4260.827mil   2159.449mil   4260.827mil   2129.449mil   4260.827mil  T          0.00 Dialight 598-8070-107F
+C33        C1206                  875mil   4380.906mil        875mil   4380.906mil    815.945mil   4380.906mil  B        360.00 10*uF          
+C32        C1206              404.528mil    4118.11mil    404.528mil    4118.11mil    404.528mil   4059.055mil  T         90.00 22*uF          
+U10        PCB-gq8lm18lv5jhlhr4rj8l-1    878.331mil   4106.299mil     878.33mil   4106.299mil    915.732mil   4159.448mil  T        270.00 Texas Instruments TPS56339DDCR
+U9         PCB-426hnsna86ae4ms1a3g5-1   1369.834mil   4237.944mil   1369.834mil   4237.944mil   1476.134mil   4162.944mil  T        180.00 SYM-11cfd913bf49ce08-1
+U5         PCB-roa9pse9auixlf5bq7cm-1   2203.741mil   3901.574mil    2203.74mil   3901.575mil   2093.505mil   3735.235mil  T         90.00 STMicroelectronics STM32G431K8T6
+U4         SOT-23A-CB3_L      2321.85mil   4381.888mil   2321.851mil    4381.89mil   2278.543mil    4419.29mil  T        360.00 MCP1701AT-3302I/CB
+U2         SOT95P280X145-6N   2661.418mil   4236.219mil   2661.417mil   4236.221mil   2706.693mil   4198.817mil  T        180.00 STMicroelectronics USBLC6-2SC6
+R2         R0603             2172.243mil    4421.26mil   2172.244mil    4421.26mil   2138.778mil    4421.26mil  T        360.00 5.1K           
+Q1         INF-PG-TO252-3-11_M    537.623mil   4355.534mil    490.378mil   4355.535mil    679.356mil    4265.77mil  T        180.00 ON Semiconductor FDD6685
+P6         PCB-rkob87su0l0zzh8rvuwa-1    125.032mil   3900.392mil    201.772mil   3822.835mil     75.032mil   3947.834mil  T          0.00 TE Connectivity / AMP 215079-4
+P5         PCB-rkob87su0l0zzh8rvuwa-1    129.953mil   3481.101mil    206.693mil   3403.543mil     79.953mil   3528.542mil  T        360.00 TE Connectivity / AMP 215079-4
+P2         PINHEAD_2X05_127   1806.104mil    4421.26mil   1806.102mil    4421.26mil   1906.104mil    4446.26mil  T        270.00 Samtec FTSH-105-01-L-D
+J1         PCB-y6z8giaxv9oe4jobifng-1   2856.791mil   4234.252mil   2909.449mil   4234.252mil   2804.134mil   4183.071mil  T         90.00 FCI 10118192-0001LF
+D2         PCB-9uwk2xd6chnjs8ehct7l-1   2176.182mil   4370.077mil   2176.181mil   4370.079mil   2206.182mil   4370.077mil  T        180.00 Dialight 598-8070-107F
+C14        C0603             2173.718mil   3594.999mil   2173.717mil       3595mil   2173.718mil   3628.463mil  T        270.00 0.1*uF         
+C12        C0603             2487.204mil   3980.312mil   2487.205mil   3980.315mil   2453.739mil   3980.312mil  T        360.00 0.1*uF         
+C8         C0603               2018.7mil   3677.166mil   2018.701mil   3677.166mil   2052.164mil   3677.166mil  T        180.00 0.1*uF         
+C6         PCB-rufcymyklsjsmb7phwvw-1   2316.929mil   4227.112mil   2316.929mil   4227.362mil   2316.929mil   4284.862mil  T        270.00 KEMET T491B105K035AT
+C5         PCB-rufcymyklsjsmb7phwvw-1   2518.951mil    4381.89mil   2518.701mil    4381.89mil   2461.201mil    4381.89mil  T        360.00 KEMET T491B105K035AT
+con7       PCB-iixc5vzsv9s8qf0jyeam-1    109.252mil   4397.638mil    102.362mil   4295.276mil    109.252mil   4397.638mil  T         90.00 connection pad 2X3mm
+con8       PCB-iixc5vzsv9s8qf0jyeam-1    102.364mil   4145.668mil    102.362mil   4145.669mil    102.364mil   4145.668mil  T         90.00 connection pad 2X3mm
+C1         C0603               849.41mil   3324.803mil    849.409mil   3324.803mil    882.874mil   3324.803mil  T        180.00 10*uF          
+C2         C0603              723.425mil   3324.803mil    723.425mil   3324.803mil     689.96mil   3324.803mil  T        360.00 0.1*uF         
+C3         C0603             1878.937mil   3929.133mil   1878.937mil   3929.134mil   1845.473mil   3929.133mil  T        360.00 0.1*uF         
+C4         C0603              1782.48mil   3460.631mil    1782.48mil    3460.63mil    1782.48mil   3494.095mil  T        270.00 0.1*uF         
+C7         C0603              2428.15mil   4098.425mil    2428.15mil   4098.425mil   2394.685mil   4098.425mil  T        360.00 0.1*uF         
+C9         Capacitor          268.701mil   3074.804mil    337.598mil   3074.803mil    337.598mil   3074.804mil  T        180.00 Panasonic EEU-FM1E471L
+C10        C0603              496.062mil   2712.599mil    496.063mil   2712.598mil    496.062mil   2746.064mil  B        270.00 100*nF         
+C11        C0603              446.999mil       2641mil        447mil       2641mil    446.999mil   2607.536mil  B         90.00 0.1*uF         
+C13        C0603              529.529mil    2796.26mil    529.528mil    2796.26mil    529.529mil   2829.724mil  T        270.00 22*nF          
+C15        C0603             2449.803mil   3605.315mil   2449.803mil   3605.315mil   2416.339mil   3605.315mil  T        360.00 0.1*uF         
+C16        C0603             1137.796mil   2712.599mil   1137.795mil   2712.598mil   1137.796mil   2746.063mil  B        270.00 100*nF         
+C17        C0603             1072.999mil       2665mil       1073mil       2665mil   1072.999mil   2631.535mil  B         90.00 0.1*uF         
+C18        Capacitor          954.724mil   3070.865mil   1023.622mil   3070.866mil   1023.622mil   3070.865mil  T        180.00 Panasonic EEU-FM1E471L
+C19        C0603             1165.354mil   2791.339mil   1165.354mil   2791.339mil   1165.354mil   2824.804mil  T        270.00 22*nF          
+C20        C0603             2444.882mil   3187.992mil   2444.882mil   3187.992mil   2411.417mil   3187.992mil  T        360.00 0.1*uF         
+C21        Capacitor         1624.016mil   3070.865mil   1692.913mil   3070.866mil   1692.914mil   3070.865mil  T        180.00 Panasonic EEU-FM1E471L
+C22        C0603             1846.456mil   2696.851mil   1846.457mil    2696.85mil   1846.456mil   2730.315mil  B        270.00 100*nF         
+C23        C0603             1765.999mil       2642mil       1766mil       2642mil   1765.999mil   2608.535mil  B         90.00 0.1*uF         
+C24        C0603             2441.929mil   2716.535mil   2441.929mil   2716.536mil   2408.464mil   2716.535mil  T        360.00 0.1*uF         
+C25        C0603             1894.686mil   2776.574mil   1894.685mil   2776.575mil   1894.686mil   2810.039mil  T        270.00 22*nF          
+C26        C0603             1444.637mil   4088.337mil   1444.637mil   4088.338mil   1411.172mil   4088.337mil  T        360.00 0.1*uF         
+C27        C0603              1165.11mil    4151.33mil    1165.11mil    4151.33mil   1198.575mil    4151.33mil  T        180.00 0.1*uF         
+C28        C0603              767.716mil   4070.866mil    767.716mil   4070.866mil    767.716mil   4104.331mil  T        270.00 100*nF         
+C29        C1206              325.787mil    4118.11mil    325.787mil    4118.11mil    325.787mil   4059.055mil  T         90.00 22*uF          
+C30        C1206              875.984mil   4300.197mil    875.984mil   4300.197mil    816.929mil   4300.197mil  B        360.00 10*uF          
+con1       PCB-iixc5vzsv9s8qf0jyeam-1    177.165mil   2476.378mil    212.598mil   2456.693mil    177.165mil   2476.378mil  T          0.00 connection pad 2X3mm
+con2       PCB-iixc5vzsv9s8qf0jyeam-1    394.685mil   2472.441mil    448.819mil   2452.756mil    394.685mil   2472.441mil  T        180.00 connection pad 2X3mm
+con3       PCB-iixc5vzsv9s8qf0jyeam-1    826.772mil   2480.315mil    850.394mil   2468.504mil    826.772mil   2480.315mil  T        180.00 connection pad 2X3mm
+con4       PCB-iixc5vzsv9s8qf0jyeam-1   1051.181mil    2474.41mil   1110.236mil   2464.567mil   1051.181mil    2474.41mil  T        180.00 connection pad 2X3mm
+con5       PCB-iixc5vzsv9s8qf0jyeam-1   1515.748mil   2480.315mil   1562.992mil   2464.567mil   1515.748mil   2480.315mil  T        180.00 connection pad 2X3mm
+con6       PCB-iixc5vzsv9s8qf0jyeam-1   1771.653mil   2480.315mil   1799.213mil   2464.567mil   1771.653mil   2480.315mil  T        180.00 connection pad 2X3mm
+D1         PCB-9uwk2xd6chnjs8ehct7l-1   1050.198mil   3450.787mil   1050.197mil   3450.787mil   1050.198mil   3480.787mil  T        270.00 Dialight 598-8070-107F
+P1         PCB-rkob87su0l0zzh8rvuwa-1   2439.991mil    3438.78mil   2516.732mil   3361.221mil   2389.991mil   3486.221mil  T          0.00 TE Connectivity / AMP 215079-4
+P3         PCB-rkob87su0l0zzh8rvuwa-1   2442.945mil   3021.457mil   2519.685mil   2943.898mil   2392.945mil   3068.897mil  T          0.00 TE Connectivity / AMP 215079-4
+P4         PCB-rkob87su0l0zzh8rvuwa-1   2436.054mil   2553.937mil   2512.795mil   2476.378mil   2386.054mil   2601.377mil  T          0.00 TE Connectivity / AMP 215079-4
+R1         R0603               979.33mil   3450.788mil    979.331mil   3450.787mil     979.33mil   3417.323mil  T         90.00 5.1K           
+R3         R0603                  301mil       2875mil        301mil       2875mil    334.464mil       2875mil  T        180.00 10K            
+R4         R0603              440.944mil   2913.386mil    440.945mil   2913.386mil    440.944mil   2879.922mil  T         90.00 100K           
+R5         R0603                   80mil   2756.001mil         80mil       2756mil    113.465mil   2756.001mil  T        180.00 100K           
+R6         R0603                   80mil       2696mil         80mil       2696mil     46.535mil       2696mil  T        360.00 1.5K           
+R7         R0603             1944.716mil       3784mil   1944.717mil       3784mil   1944.716mil   3750.536mil  T         90.00 10K            
+R8         R0603              720.472mil    2881.89mil    720.472mil    2881.89mil    687.007mil    2881.89mil  T        360.00 10K            
+R9         R0603              710.629mil   2759.841mil    710.629mil   2759.842mil    677.164mil   2759.841mil  T        360.00 100K           
+R10        R0603              720.472mil   2826.772mil    720.472mil   2826.772mil    753.937mil   2826.772mil  T        180.00 100K           
+R11        R0603              748.031mil   2677.165mil    748.032mil   2677.165mil    714.567mil   2677.165mil  T        360.00 1.5K           
+R12        R0603             1456.694mil   2822.835mil   1456.693mil   2822.835mil   1456.694mil   2856.299mil  T        270.00 10K            
+R13        R0603              1381.89mil   2822.835mil    1381.89mil   2822.835mil    1381.89mil   2856.299mil  T        270.00 100K           
+R14        R0603              1421.26mil   2712.599mil    1421.26mil   2712.598mil   1454.724mil   2712.599mil  T        180.00 100K           
+R15        R0603              1421.26mil   2657.481mil    1421.26mil    2657.48mil   1387.796mil   2657.481mil  T        360.00 1.5K           
+R16        R0603               939.96mil   3944.882mil    939.961mil   3944.882mil     939.96mil   3911.418mil  T         90.00 30             
+R17        R0603               810.04mil   3944.882mil    810.039mil   3944.882mil     810.04mil   3978.346mil  T        270.00 52.3K          
+R18        R0603              876.968mil   3944.882mil    876.968mil   3944.882mil    876.968mil   3911.418mil  T         90.00 10K            
+U1         MP04A_L            782.481mil   3549.213mil     782.48mil   3549.213mil     691.93mil   3437.009mil  T         90.00 LM2937IMP-5.0/NOPB
+U6         PCB-45171vetpwtrcknlr443-1    322.834mil   2728.347mil    322.835mil   2728.347mil    206.692mil   2817.914mil  T          0.00 Texas Instruments DRV8874PWPR
+U7         PCB-45171vetpwtrcknlr443-1    968.504mil   2736.221mil    968.504mil    2736.22mil    852.363mil   2825.788mil  T          0.00 Texas Instruments DRV8874PWPR
+U8         PCB-45171vetpwtrcknlr443-1   1681.103mil   2712.598mil   1681.102mil   2712.598mil   1564.962mil   2802.165mil  T          0.00 Texas Instruments DRV8874PWPR
+C31        C0603              876.969mil   4221.457mil    876.969mil   4221.457mil    843.504mil   4221.457mil  B        360.00 100*nF         
+U3         PCB-tizc0j283js4s37wua64-1   1606.299mil   3740.157mil   1606.299mil   3740.157mil   1781.299mil   3923.228mil  T        270.00 Texas Instruments ISO7760DWR
+
