@@ -107,10 +107,11 @@ typedef struct Received{
 	uint8_t speed2;
 	uint8_t speed3;
 	uint8_t throwerSpeed;
+	uint8_t servospeed;
 	uint8_t delimiter;
 } Received;
 
-Received received = {.speed1 = 125, .speed2 = 125, .speed3 = 125, .throwerSpeed = 0, .delimiter = 0}; // (4)
+Received received = {.speed1 = 125, .speed2 = 125, .speed3 = 125, .throwerSpeed = 0,.servospeed = 0, .delimiter = 0}; // (4)
 volatile uint8_t isCommandReceived = 0; // (5)
 volatile float pGain, iGain, dGain = 0;
 
@@ -127,7 +128,7 @@ void CDC_On_Receive(uint8_t* buffer, uint32_t* length) {
 }
 
 
-void Set_Motor_Speed(volatile uint32_t *channel_a,
+void Set_Motor_Speed(volatile uint32_t *channel_a, //copy paste
 		volatile uint32_t *channel_b, int32_t motor_speed) {
 	if (motor_speed > 0) {
 		// forward
@@ -198,9 +199,6 @@ int PID2(uint8_t enc, uint8_t setpoint){
   * @brief  The application entry point.
   * @retval int
   */
-
-
-
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -226,7 +224,7 @@ int main(void)
     DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
 
     unsigned long esctimer = DWT->CYCCNT;
-
+    unsigned long servotimer = DWT->CYCCNT;
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -300,6 +298,17 @@ typedef struct Feedback{
 		  while((DWT->CYCCNT - esctimer) / 96 < (received.throwerSpeed*3.92+1000));
 		  HAL_GPIO_WritePin(ESCPWM_GPIO_Port, ESCPWM_Pin,0);
 	  }
+
+
+
+	  //SERVO
+	  if((DWT->CYCCNT - servotimer)/96000 > 2){
+		  servotimer = DWT->CYCCNT;
+		  HAL_GPIO_WritePin(SERVOPWM_GPIO_Port, SERVOPWM_Pin,1);
+		  while((DWT->CYCCNT - servotimer) / 96 < (received.servospeed*23));
+		  HAL_GPIO_WritePin(SERVOPWM_GPIO_Port, SERVOPWM_Pin,0);
+	  }
+
 
 
 
@@ -837,7 +846,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(ESCPWM_GPIO_Port, ESCPWM_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, ESCPWM_Pin|SERVOPWM_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : ENC3A_Pin */
   GPIO_InitStruct.Pin = ENC3A_Pin;
@@ -851,18 +860,18 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : ENC1B_Pin ENC3B_Pin PA15 */
-  GPIO_InitStruct.Pin = ENC1B_Pin|ENC3B_Pin|GPIO_PIN_15;
+  /*Configure GPIO pins : ENC1B_Pin ENC3B_Pin */
+  GPIO_InitStruct.Pin = ENC1B_Pin|ENC3B_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : ESCPWM_Pin */
-  GPIO_InitStruct.Pin = ESCPWM_Pin;
+  /*Configure GPIO pins : ESCPWM_Pin SERVOPWM_Pin */
+  GPIO_InitStruct.Pin = ESCPWM_Pin|SERVOPWM_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(ESCPWM_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);

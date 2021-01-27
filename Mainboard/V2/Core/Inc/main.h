@@ -110,6 +110,8 @@ void Error_Handler(void);
 #define M2_PWM1_GPIO_Port GPIOA
 #define M2_PWM2_Pin GPIO_PIN_9
 #define M2_PWM2_GPIO_Port GPIOA
+#define SERVOPWM_Pin GPIO_PIN_15
+#define SERVOPWM_GPIO_Port GPIOA
 #define M3_PWM1_Pin GPIO_PIN_6
 #define M3_PWM1_GPIO_Port GPIOB
 #define M3_PWM2_Pin GPIO_PIN_7
